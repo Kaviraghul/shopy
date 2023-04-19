@@ -16,14 +16,14 @@ Map<String, dynamic> _$BaseResponseToJson(BaseResponse instance) =>
       'message': instance.message,
     };
 
-CustomerResponse _$CustomerResponseFromJson(Map<String, dynamic> json) =>
-    CustomerResponse(
+LoginResponse _$LoginResponseFromJson(Map<String, dynamic> json) =>
+    LoginResponse(
       json['id'] as String?,
       json['name'] as String?,
       json['email'] as String?,
     );
 
-Map<String, dynamic> _$CustomerResponseToJson(CustomerResponse instance) =>
+Map<String, dynamic> _$LoginResponseToJson(LoginResponse instance) =>
     <String, dynamic>{
       'id': instance.id,
       'name': instance.name,

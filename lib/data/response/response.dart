@@ -13,7 +13,7 @@ class BaseResponse {
 }
 
 @JsonSerializable()
-class CustomerResponse {
+class LoginResponse {
   @JsonKey(name: "id")
   String? id;
   @JsonKey(name: "name")
@@ -21,12 +21,12 @@ class CustomerResponse {
   @JsonKey(name: "email")
   String? email;
 
-  CustomerResponse(this.id, this.name, this.email);
+  LoginResponse(this.id, this.name, this.email);
 
   // from json
-  factory CustomerResponse.fromJson(Map<String, dynamic> json) =>
-      _$CustomerResponseFromJson(json);
+  factory LoginResponse.fromJson(Map<String, dynamic> json) =>
+      _$LoginResponseFromJson(json);
 
   // to json
-  Map<String, dynamic> toJson() => _$CustomerResponseToJson(this);
+  Map<String, dynamic> toJson() => _$LoginResponseToJson(this);
 }
